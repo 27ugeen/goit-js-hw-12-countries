@@ -1,0 +1,38 @@
+{{#each this}}
+<table>
+    <thead>
+        <tr>
+            <th>Country</th>
+            <th>{{name}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>CODE</td>
+            <td>{{alpha2Code}}</td>
+        </tr>
+        <tr>
+            <td>Region</td>
+            <td>{{region}}</td>
+        </tr>
+        <tr>
+            <td>Population</td>
+            <td>{{population}}</td>
+        </tr>
+        <tr>
+            <td>TimeZone</td>
+            <td>
+                {{#each timezones}}
+                <span> {{this}} </span>
+                {{/each}}
+            </td>
+        </tr>
+        <tr>
+            <td>Flag</td>
+            <td>
+                <img src="{{flag}}" alt="{{name}}" width="480" />
+            </td>
+        </tr>
+    </tbody>
+</table>
+{{/each}}
